@@ -1,0 +1,69 @@
+.detailsContainer {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, .125);
+    position: relative;
+
+}
+
+.headerDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    background-color: #0395d9;
+    color: white;
+    height: 3rem;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: calc(90% - 3rem);
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.innerContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    padding: 0.8rem;
+}
+
+
+.totalAmount {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: #0395d9;
+    word-wrap: break-word;
+    padding: 0.8rem;
+    position: absolute;
+    bottom: 1rem;
+    
+}
+
+.amountGroup {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.fixedChargeTxt {
+    font-size: 12px;
+    margin-top: 1%;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .detailsContainer {
+        min-height: 600px;
+    }    
+}
